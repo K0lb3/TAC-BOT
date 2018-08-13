@@ -16,9 +16,9 @@ main = LoadUnits()
 logi = (main['UN_V2_LOGI'])
 #print (logi)
 r = Repository()
-r.repo.set('UN_V2_LOGI',logi)
+r.repo.set('UN_V2_LOGI',json.dumps(logi))
 value = r.repo.get('UN_V2_LOGI')
-print(value)
+print(type(value))
 
 #we shall move the resources to a redis server here
 #test commands
