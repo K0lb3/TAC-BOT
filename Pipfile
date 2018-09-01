@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jellyfish = "~=0.6.1"
+"discord.py" = {ref = "rewrite", git = "https://github.com/Rapptz/discord.py.git"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"

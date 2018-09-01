@@ -2,15 +2,7 @@ import os
 import json
 
 def LoadResources():
-    mypath = os.path.dirname(os.path.realpath(__file__)).replace('functions','resources')+'\\'
-    #files = os.listdir(mypath)
-
-    #ret={}
-
-    #for f in files:
-    #    print(f)
-    #    with open(mypath+f, "rt", encoding='utf8') as file:
-    #        ret[f[:-5].title()]=json.loads(file.read())
-    with open (mypath+'Database.json', "rt", encoding='utf8') as file:
+    mypath = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'resources')
+    with open (os.path.join(mypath, 'Database.json'), "rt", encoding='utf8') as file:
             ret=json.loads(file.read())
     return ret

@@ -24,4 +24,4 @@ This instructions describe for the people who has never set up a Python developm
 1. Set the Discord bot token as the environment variable
     * On Unix-like environment: `$ export DISCORD_BOT_TOKEN='MyDiscordBot'`
     * On Windows environment: `C:\TAC_bot_db> set DISCORD_BOT_TOKEN='MyDiscordBot'`
-1. Run the bot: `$ python discord_bot/Bot.py`
+1. Run the bot: `$ python Discord_Bot_V2/Bot.py`
